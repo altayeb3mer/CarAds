@@ -14,15 +14,15 @@
         <group android:checkableBehavior="none"
             android:id="@+id/third_menu_group">
             <item
-                android:id="@+id/nav_menu_setting"
+                android:id="@+id/nav_menu_1"
                 android:title="مراكز الخدمات"
                 />
             <item
-                android:id="@+id/nav_menu_favorite"
+                android:id="@+id/nav_menu_2"
                 android:title="بيانات الحساب"
                 />
             <item
-                android:id="@+id/nav_menu_favorite2"
+                android:id="@+id/nav_menu_3"
                 android:title="العمليات السابقة"
                 />
         </group>
@@ -59,7 +59,7 @@
 <!--        </group>-->
         <group>
             <item
-                android:id="@+id/nav_menu_sc1"
+                android:id="@+id/nav_menu_4"
                 android:title="تواصل"
                 />
 <!--            <item-->

@@ -4,4 +4,9 @@
     <color name="colorPrimaryDark">#59235E</color>
     <color name="colorAccent">#B83B5E</color>
     <color name="defaultColor">#808080</color>
+
+
+
+    <color name="backgroundColor">#F5F5F5</color>
+    <color name="grayColor">#AFAFAF</color>
 </resources>

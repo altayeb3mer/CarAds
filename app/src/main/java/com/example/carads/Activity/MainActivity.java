@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity  implements  BottomNavigatio
     BottomNavigationView bottomNavigationView;
     DrawerLayout drawerLayout;
     LinearLayout nav_drawer_lay;
+    NavigationView navigationView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,42 +51,41 @@ public class MainActivity extends AppCompatActivity  implements  BottomNavigatio
         bottomNavigationView = findViewById(R.id.btn_navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
         drawerLayout = findViewById(R.id.n_drawer);
+        navigationView = findViewById(R.id.n_view);
+        navigationView.setItemIconTintList(null);
+        navigationView.setNavigationItemSelectedListener(this);
     }
 
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
+
             case R.id.btn_nav1:{
                 switchToFragment(1);
                 break;
             }
-
-
-
-            //nav menu
-            case R.id.nav_menu_sc1:{
-//                startActivity(new Intent(getApplicationContext(),Login.class));
-                Toast.makeText(this, "لاحقا", Toast.LENGTH_SHORT).show();
-//                drawerLayout.closeDrawer(GravityCompat.START);
+            case R.id.btn_nav2:{
+                switchToFragment(2);
                 break;
             }
-//            case R.id.nav_menu_sc2:{
-////                startActivity(new Intent(getApplicationContext(),Register.class));
-//                Toast.makeText(this, "لاحـقا", Toast.LENGTH_SHORT).show();
-//                drawerLayout.closeDrawer(GravityCompat.START);
-//                break;
-//            }
-//            case R.id.nav_menu_favorite:{
-//                startActivity(new Intent(getApplicationContext(),FavoriteAds.class));
-//                drawerLayout.closeDrawer(GravityCompat.START);
-//                break;
-//            }
-//            case R.id.nav_menu_login:{
-//                startActivity(new Intent(getApplicationContext(),Login.class));
-//                drawerLayout.closeDrawer(GravityCompat.START);
-//                break;
-//            }
+            case R.id.btn_nav3:{
+                switchToFragment(3);
+                break;
+            }
+
+            //nav menu
+            case R.id.nav_menu_1:{
+                startActivity(new Intent(getApplicationContext(),Login.class));
+                drawerLayout.closeDrawer(GravityCompat.START);
+                break;
+            }
+            case R.id.nav_menu_2:{
+                startActivity(new Intent(getApplicationContext(),Registration.class));
+                drawerLayout.closeDrawer(GravityCompat.START);
+                break;
+            }
+
 
         }
         return true;
