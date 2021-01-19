@@ -105,6 +105,7 @@
             android:background="@drawable/shape_btn_bg"
             android:layout_gravity="center_horizontal"
             android:textStyle="bold"
+            android:id="@+id/btn"
             />
 
 

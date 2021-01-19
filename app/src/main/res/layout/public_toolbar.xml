@@ -6,6 +6,7 @@
     android:orientation="vertical"
     app:cardBackgroundColor="@android:color/transparent"
     app:cardCornerRadius="0dp"
+    app:cardElevation="0dp"
     android:layoutDirection="rtl">
 
         <androidx.appcompat.widget.Toolbar

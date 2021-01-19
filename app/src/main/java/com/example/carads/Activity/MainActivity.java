@@ -90,6 +90,11 @@ public class MainActivity extends AppCompatActivity  implements  BottomNavigatio
                 drawerLayout.closeDrawer(GravityCompat.START);
                 break;
             }
+            case R.id.nav_menu_4:{
+                startActivity(new Intent(getApplicationContext(),PaymentActivity.class));
+                drawerLayout.closeDrawer(GravityCompat.START);
+                break;
+            }
         }
         return true;
     }
