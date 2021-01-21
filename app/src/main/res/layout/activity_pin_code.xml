@@ -48,6 +48,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
                 <EditText
+                    android:layout_toRightOf="@+id/cardBtn"
                     android:paddingLeft="@dimen/margin_normal_size"
                     android:paddingRight="@dimen/margin_normal_size"
                     android:layout_width="match_parent"
@@ -57,6 +58,7 @@
                     android:textColor="@color/colorPrimary"
                     android:textSize="@dimen/txt_normal_size"/>
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/cardBtn"
                     android:layout_alignParentLeft="true"
                     android:layout_width="70dp"
                     android:layout_height="match_parent"
